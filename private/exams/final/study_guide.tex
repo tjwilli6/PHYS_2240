@@ -1,0 +1,71 @@
+\documentclass{article}
+\usepackage[margin=1.5cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\pagestyle{fancy}
+
+\begin{document}
+\fancyhead[L]{ \includegraphics[width=2cm]{au_logo.png} }
+\fancyhead[R]{PHYS 2240: General Physics I}
+\fancyfoot[C]{\thepage}
+\vspace*{0cm}
+\begin{center}
+	{\LARGE \textbf{Exam II Study Guide}}\\
+	\vspace{0.25cm}
+	%{\Large Due: Friday, September 4}
+\end{center}
+Exam II will cover chapters 4-6. I will highlight the main points below. Please note: the exam will cover only concepts introduced in chapters 4-6; but keep in mind that many of \textit{those} concepts rely on a solid understanding of earlier chapters (for example: chapter 5 is really just a subset of special applications of the momentum principle, which was introduced in chapter 2). So you should not forget about the momentum principle or the definition of velocity just because they were introduced in earlier chapters. 
+\section*{Chapter 4}
+%\subsection*{Core Concepts}
+\begin{itemize}
+	\item Go back through Chapter 4 homework on WebAssign and make sure you understand it
+	\item Be able to qualitatively explain the ball-spring model of a solid and its basic consequences (normal force, friction)
+	\item Be able to calculate normal force and frictional forces (both static and kinetic) and use these results (see examples in section 4.8; homework exercises)
+	\begin{itemize}
+		\item Make sure you know the difference between static and kinetic friction!
+	\end{itemize}
+	\item Do not worry about Young's modulus and stress/strain
+	\item Do not worry about buoyancy, no buoyancy questions will appear on the exam (nor on the final)
+\end{itemize}
+\section*{Chapter 5}
+	This chapter is all about identifying forces acting on a system whose acceleration you already know. Remember our steps!
+	\begin{enumerate}
+		\item Identify the system
+		\item Draw a free body diagram to identify the forces acting on the system
+		\item Pick a coordinate system
+		\item Sum the forces in each direction and set equal to $\frac{dp}{dt}$:
+		\begin{align*}
+			\frac{dp}{dt}_x&=F_{net,x}\\
+			\frac{dp}{dt}_y&=F_{net,y}\\
+			\frac{dp}{dt}_z&=F_{net,z}
+		\end{align*}
+	\end{enumerate}
+	If an object is moving in a circular path at constant speed, then:
+	\begin{align*}
+		\left|\frac{dp}{dt}\right|_{||}&=0=F_{net,||}\\
+		\left|\frac{dp}{dt}\right|_{\perp}&=m\frac{v^2}{r}=F_{net,\perp}\\
+	\end{align*}
+	Go back through Chapter 5 homework on WebAssign and make sure you understand it.\\
+	You will be asked to draw free body diagrams for credit on this exam. Make sure you know how to do this.
+	
+	\section*{Chapter 6}
+	The main concepts of chapter 6:
+	\begin{itemize}
+		\item The energy principle $\Delta E_{sys}=W_{surr}$
+		\item Kinetic energy $K=\frac{1}{2}mv^2$
+		\item Work $W=\vec{F}\cdot\Delta \vec{r}$
+		\item Potential energy which can exist only when your system consists of more than one object: $\Delta U = -W_{int}$\\ We focused on gravitational potential energy
+		\begin{itemize}
+			\item[] $U(r)=-G\frac{m_1m_2}{r}$, in general
+			\item[] $U(y)\approx-G\frac{M_Em}{R_E}+mgy$, near the surface of the Earth
+		\end{itemize}
+	\end{itemize}
+
+	You should be able to:
+	\begin{itemize}
+		\item Calculate work done on a system, given $\vec{F}$ and $\Delta \vec{r}$
+		\item Given the work done on a system, calculate its change in kinetic energy and corresponding change in speed
+		\item Use the energy principle to solve for unknown variables of a system (given initial speed and position, and final position, calculate final speed, etc.)s
+	\end{itemize}
+\end{document}

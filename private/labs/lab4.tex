@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage[margin=1.5cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\pagestyle{fancy}
+\usepackage{amsmath}
+
+\begin{document}
+\fancyhead[L]{ \includegraphics[width=2cm]{au_logo.png} }
+\fancyhead[R]{PHYS 2240: General Physics II}
+\fancyfoot[C]{\thepage}
+\vspace*{0cm}
+\begin{center}
+	{\LARGE \textbf{Lab 4}}\\
+	\vspace{.25cm}
+	{\Large Projectile Motion}
+	%\vspace{0.25cm}
+	%{\Large Due: Friday, September 4}
+\end{center}
+
+\section*{Overview}
+The goal of this lab is very simple: predict the motion of a launched projectile in order to knock down some Jenga blocks.
+
+Quantitatively, this means predicting $\Delta x$ based on the angle of the launcher $\theta$ and the initial velocity $v_i=|\vec{v}_i|$. Theoretically, you can find $\Delta x$ using equation \ref{x_t} below. Experimentally, you can use the taped down carbon paper to mark where the ball hit and measure $\Delta x$ using a meterstick.
+\section*{Theory}
+In order to make your predictions, you should assume that the launched projectile is subject only to the constant gravitational force $\vec{F_g}=<0,-mg,0>$, where $g=9.8$ m$\cdot$s$^{-2}$.
+\begin{align}
+v_x(t)&=v_{x,i}+\frac{F_x}{m}t\\
+v_y(t)&=v_{y,i}+\frac{F_y}{m}t\\
+\label{x_t} x(t)&=x_i+v_i\cos({\theta})t+\frac{1}{2}\frac{F_x}{m}t^2\\
+\label{y_t}y(t)&=y_i+v_i\sin({\theta})t+\frac{1}{2}\frac{F_y}{m}t^2
+\end{align}
+The time of flight $\tau$ is given by setting equation \ref{y_t} equal to zero and solving for $t$. This results in a quadratic equation, the roots of which are given by:
+\begin{equation}
+\tau=\frac{v_i\sin{\theta}+\sqrt{v_i^2\sin^2{\theta}-2\frac{F_y}{m}y_i }}{g}
+\label{tof}
+\end{equation}
+
+\section*{Setup}
+This lab uses use a metal ball of unknown mass and a projectile launcher. The launcher has
+three settings (slow, medium, and fast) as indicated by the number of clicks you hear when
+pushing the ball down the barrel. {\bfseries Do not use the “fast” setting!} The only measured quantities will be the horizontal distance $\Delta x$ from the launcher to the landing point of the projectile, the launch angle of the projectile launcher, and the vertical distance $\Delta y$ from the ground to the barrel of the launcher. The time of flight is difficult to measure, so we will use equation \ref{tof} to ``measure'' the time of flight. To measure the initial velocity, consider setting the projectile launcher at a very special
+angle.
+
+Note that if you miss, the ball will roll through the blocks without knocking them down.
+You can use the stools around the lab as a backboard.
+
+You can use the meterstick to mark where the initial x position ($x_i$) is on the carpet below
+the projectile launcher. Do not measure from the end of the barrel! Instead, measure from
+the crosshairs on the barrel.
+
+\textbf{You should knock over the blocks two separate times, varying either $v_0$ or $\theta$ or both.}
+\end{document}

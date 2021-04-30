@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[margin=1.5cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\pagestyle{fancy}
+
+\begin{document}
+\fancyhead[L]{ \includegraphics[width=2cm]{au_logo.png} }
+\fancyhead[R]{PHYS 2240: General Physics II}
+\fancyfoot[C]{\thepage}
+\vspace*{0cm}
+\begin{center}
+	{\LARGE \textbf{Lab 3}}\\
+	\vspace{.25cm}
+	{\Large Newton's Second Law}
+	%\vspace{0.25cm}
+	%{\Large Due: Friday, September 4}
+\end{center}
+
+\section*{Overview}
+In class, we related net force and change in momentum via the momentum principle:
+\begin{equation}
+\Delta \vec{p} = \vec{F}_\mathrm{net}\Delta t
+\end{equation}
+In the common case of constant mass $m$, this equation is the same as:
+\begin{equation}
+\vec{a}=\frac{ \vec{F}_\mathrm{net}}{m}
+\end{equation}
+In today's lab, we will apply a constant force to cause a cart to accelerate down the track. We will measure acceleration, and investigate the the relationship between the mass of the cart and the cart's acceleration.
+
+\section*{Hypothesize}
+\subsection*{Predictions}
+\begin{enumerate}
+	\item If we use the same force for each experiment but continually increase the cart's mass, what will we observe happen to the acceleration $\vec{a}$?
+	\item If we use the same force for each experiment but continually increase the cart's mass, what will we observe happen to the change in momentum $\Delta\vec{p}$ (assuming we measure momentum at the same time for each experiment)?
+\end{enumerate}
+\section*{Setup}
+\begin{enumerate}
+	\item Choose a hanging mass to act as the applied force throughout the experiment. A good force will move the cart across the track in about 2-3 seconds. The magnitude of your force is $|\vec{F}|=mg$, where $g=9.81$ m s$^{-2}$.
+	\item Record the mass of the cart (the mass of the cart by itself is 500 g. You will add additional mass throughout the experiment.)
+	\item Using the motion detector and Logger pro, measure the acceleration of the cart while the applied force pulls it down the track.  Record the acceleration. Your instructor will show you how to use LoggerPro to measure acceleration.
+	\item Repeat the procedure with different cart masses. Try to obtain measurements for 5 different masses. Record your data in a table with one row per trial. The columns should be cart mass, measured acceleration, and net force.
+\end{enumerate}
+
+\section*{Analyze}
+Create a graph to visualize your data. On the x-axis should be the controlled variable (mass), on the y-axis should be the measured variable (acceleration). Use your data to calculate the constant force that was applied to the various cart masses.  Compare your experimentally determined force to the theoretical force given by $|\vec{F}|=mg$.
+\subsection*{Questions}
+Revisit your predictions and compare them to your results.
+\end{document}

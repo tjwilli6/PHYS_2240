@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[margin=1.5cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\pagestyle{fancy}
+\usepackage{amsmath}
+
+\begin{document}
+\fancyhead[L]{ \includegraphics[width=2cm]{au_logo.png} }
+\fancyhead[R]{PHYS 2240: General Physics I}
+\fancyfoot[C]{\thepage}
+\vspace*{0cm}
+\begin{center}
+	{\LARGE \textbf{Lab 7}}\\
+	\vspace{.25cm}
+	{\Large Energy Conservation}
+	%\vspace{0.25cm}
+	%{\Large Due: Friday, September 4}
+\end{center}
+
+\section*{Introduction}
+In this lab, a massive cart will roll down an incline as you measure its speed with a motion detector. The goal of the lab is to verify that the total energy of the Earth + cart system is conserved, assuming that nothing significant is in the surroundings.\footnote{You will revisit the validity of this assumption later!}
+
+\section*{Details}
+You will use an inclined ramp to cause a cart to move downhill. For each trial, you will first calculate and then measure the speed of the cart at the end of the ramp. You will also measure the initial and final energy of the system, and the fraction $E_i / E_f$ (which, ideally, should be 1). You will run the experiment twice more, once changing the mass of the cart and again changing the inclination angle.\footnote{I highly recommend setting up a spreadsheet or a Python program to do these calculations for you; this will save you a lot of time} 
+
+The motion detector is not perfect, so for each trial you should measure $v_f$ multiple times and then take the average. Take 3 measurements, and then continue adding measurements until, on average, each measurement is within 5\% of the mean ($\sigma_v/\mu_v\cdot 100 \leq 5$). $\sigma$ and $\mu$ are, respectively, the \textit{mean} and \textit{standard deviation}, and can easily be calculated using a numpy array in Python or any spreadsheet program. This average value is what you will record in your data table.
+
+The potential energy is $U\approx -\frac{GM_em_\mathrm{cart}}{R_E}+m_\mathrm{cart}gy$. Since what matters is not $U$, but $\Delta U$, we can ignore the first term, since it doesn't change. This also means we can pick any point to be our reference point (instead of $y$ being zero at the surface of the Earth, we can set $y=0$ at the bottom of the ramp).
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+	\hline 
+	Trial \# & Cart mass [kg] & $\theta_\mathrm{ramp} [^\circ]$ &$v_f$ (theory)&$v_f$ (meas)& $E_i$ [J]&$E_f$ [J]&$E_i/E_f$ \\\hline
+	1 & - & - & - & - & - & - & - \\ \hline
+	etc & - & - & - & - & - & - & - \\ \hline
+\end{tabular}
+\end{center}
+
+\section*{Suggestions for taking your measurements}
+For best results, be sure that your cart starts and stops at the same point on the ramp for each measurement. To measure the height difference between the final and initial point on the track, note that the track, the blocks used to elevate the track, and the table form a right triangle (of which the track is the hypotenuse). Therefore, if the cart moves a distance $d$ along the ramp, it has traveled a distance $y=d\sin{\theta}$ in the vertical direction. Therefore you should take care that $d$, the distance along the track between the cart's final and initial positions, is the same for each measurement.
+
+\section*{Analysis}
+\begin{itemize}
+	\item Did your initial and final energy measurements tend to agree? Why or why not? Consider both uncertainties in measurements, as well as objects in the surrounding that we didn't include in our analysis that could affect the system's energy.
+	\item \textbf{Extra Credit:} In this lab you used the energy principle to calculate $v_f$. Show that you could also use the momentum principle to obtain the same result, albeit with some more challenging math
+\end{itemize}
+\end{document}

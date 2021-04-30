@@ -1,0 +1,155 @@
+\documentclass{article}
+\usepackage[margin=1.5cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\pagestyle{fancy}
+
+\begin{document}
+\fancyhead[L]{ \includegraphics[width=2cm]{au_logo.png} }
+\fancyhead[R]{PHYS 2250: General Physics II}
+\fancyfoot[C]{\thepage}
+\vspace*{0cm}
+\begin{center}
+	{\LARGE \textbf{Exam I Study Guide}}\\
+	\vspace{0.25cm}
+	%{\Large Due: Friday, September 4}
+\end{center}
+\section*{Chapter 13}
+%\subsection*{Core Concepts}
+\begin{itemize}
+	\item Definition of electric field:
+		\begin{equation*}
+		\vec{E}=\frac{\vec{F}}{q}
+		\end{equation*}
+		\begin{itemize}
+			\item Know how to calculate electric field given force and charge
+			\item Know how to calculate electric force given field and charge
+			\item Be familiar with the direction of the force for both positive and negative particles. Positive charges experience a force in the same direction as $\vec{E}$. Negative charges experience a force in the opposite direction as $\vec{E}$.
+			\item Example problems: P17, P20, P22
+		\end{itemize}
+	
+	\item Electric field of a point charge
+		\begin{equation*}
+		\vec{E}=\frac{1}{4\pi\epsilon_0}\frac{q}{|\vec{r}|^2}\hat{r}
+		\end{equation*}
+		\begin{itemize}
+			\item $\vec{r}$: the vector pointing from the charge to the point where the field is being measured ($\vec{r}_\mathrm{obs}-\vec{r}_\mathrm{src}$)
+			\item Be able to sketch the field lines of a point charge (radially outward for a positive charge, radially inward for a negative charge)
+			\item Example problems: P28, P33, P35, P36
+		\end{itemize}
+	
+	\item The principle of superposition
+		\begin{equation*}
+		\vec{E}_\mathrm{total}=\vec{E}_1+\vec{E}_2+\vec{E}_3+...
+		\end{equation*}
+		\begin{itemize}
+		\item The total electric field of several point charges is the vector sum of the individual fields of each charge
+		\item Find the field vector of each charge, then add them together
+		\item Make sure you know how to add vectors!
+		\item Example problems: P47, P48, P49
+		\end{itemize}
+
+%\subsection*{Applications}
+
+	\item Dipoles
+	\begin{itemize}
+		\item You will be given the expression for the electric field on-axis and perpendicular
+		\begin{eqnarray*}
+		|\vec{E}_\mathrm{dipole,on-axis}| \approx \frac{1}{4\pi\epsilon_0}\frac{2p}{r^3}\\
+		|\vec{E}_\mathrm{dipole,perp}| \approx \frac{1}{4\pi\epsilon_0}\frac{p}{r^3}
+		\end{eqnarray*}
+		\item Remember how we derived these expressions. There is nothing magic about them, a dipole is just two point charges and we used superposition to find the field
+		\item Know how to calculate the dipole moment $p=qs$
+		\item Example problems: P52, P53, P57, P59
+	\end{itemize}
+\end{itemize}
+
+\section*{Chapter 14}
+%\subsection*{Core Concepts}
+\begin{itemize}
+	\item Be familiar with the behavior of charges on both insulators and conductors
+	\item Be able to calculate the mutual force between a point charge and a neutral insulator
+	\item Be familiar with the conditions for static equilibrium within a conductor
+	\begin{itemize}
+		\item $\bar{v}=0 \Leftrightarrow |\vec{E}_\mathrm{net}|=0$
+		\item Only the total field $\vec{E}_\mathrm{net}$ needs to be 0 in equilibrium. There can still be a field due to an external charge, it is just exactly canceled by the induced field due to polarization inside the metal
+	\end{itemize}
+	\item What are the mechanisms for charging/discharging for both insulators and conductors?
+	\begin{itemize}
+		\item Insulators
+		\begin{itemize}
+			\item Charge by contact (excess charge stays put)
+		\end{itemize}
+		\item Conductors
+			\item Charge/discharge by contact
+			\item Charge by induction
+			\item Grounding
+	\end{itemize}
+	\item Example problems: P29, P37, P45, P49, P50, P56, P61
+\end{itemize}
+\begin{table}[ht!]
+	\renewcommand{\arraystretch}{2.5}
+	\begin{tabular}{ccc}
+		&\textbf{Insulators}&\textbf{Conductors}\\
+		\textbf{Mobile Charges?}&No&Yes\\
+		\textbf{Location of excess charge}&Anywhere&Surface only\\
+		\textbf{Does excess charge spread?} & No & Yes, uniformly around the surface\\
+		\textbf{$\vec{E}_\mathrm{net}$ inside} & Can be non-zero & 0 in equilibrium\\
+		\textbf{Polarization}&Induced dipoles ($p=\alpha|\vec{E}|$)&Moving charges ($\bar{v}=u|\vec{E}|$)
+	\end{tabular}
+\end{table}
+
+\section*{Chapter 15}
+\begin{itemize}
+	\item Be able to set up integral expressions for the electric field of uniform, one-dimensional charge distributions
+	\begin{itemize}
+		\item Find charge density (total charge $\div$ length).
+		\item Divide the distribution into very small pieces.
+		\item Find the charge $dq$ of a single piece (in terms of the charge density and a differential variable).
+		\item Find $\vec{r}=\vec{r}_\mathrm{obs}-\vec{r}_\mathrm{src}$ for this piece, and use $dq$ and $\vec{r}$ to find the electric field $\vec{dE}$ of the piece of charge, assuming it is a point charge.
+		\item The total field of the distribution is simply the integral of the field of every little piece $\vec{dE}$ over every possible charge location $\vec{r}_\mathrm{src}$. Find the bounds of integration, and write this expression in integral form.
+		\item Be able to derive the field of a charged rod or ring
+		\item Example problems: P27, P29, P30 (a)
+	\end{itemize}
+	\item Be able to use superposition to find the electric field of multiple charge distributions
+	\begin{itemize}
+		\item You do not need to memorize any of the field equations in the book. If I want you to use an equation for the field of a charge distribution, I will either give it to you or ask you to derive it as a part of the problem.
+		\item Example problems: P31, P53, P58
+	\end{itemize}
+\end{itemize}
+\section*{Chapter 16}
+\begin{itemize}
+	\item Know the connection between potential difference $\Delta V$, change in potential energy $\Delta U$, and change in kinetic energy $\Delta K$.
+	\begin{itemize}
+		\item[$\ast$] $\Delta K = W = -\Delta U$
+		\item[$\ast$] $\Delta U = q\Delta V$
+		\item[$\ast$] $\Delta V = -\int\vec{E}\cdot \vec{dr}$
+		\begin{itemize}
+			\item[--] if $\vec{E}$ is uniform: $\Delta V = -\vec{E}\cdot\vec{\Delta r}$
+		\end{itemize}
+		\item[$\ast$] Example problems: P28, P37, P42
+	\end{itemize}
+	\item Know the meaning of the sign of potential difference (for a positive particle,  $-\Delta V\implies -\Delta U \implies + \Delta K$, particle gains kinetic energy and therefore speed.)
+	\begin{itemize}
+		\item Particles will move in the direction of \textit{decreasing} potential energy.
+		\item Positive particles: move in the direction where $\Delta V$ is negative (move from high potential to low potential).
+		\item Negative particles: opposite
+		\item Example problems: P29, P30, P32
+	\end{itemize}
+	\item Given a function for electric potential: be able to calculate the electric field:
+	\begin{eqnarray*}
+	\vec{E}=-\left<\frac{dV}{dx},\frac{dV}{dy},\frac{dV}{dz}  \right>
+	\end{eqnarray*}
+\begin{itemize}
+	\item Example problems: P33, P48
+\end{itemize}
+	\item Be familiar with the so-called ``potential at a single point'' $V$, which is simply useful shorthand the potential difference between that point and infinity
+	\begin{itemize}
+		\item Know the potential of a point charge at a point in space, $V=\frac{1}{4\pi\epsilon_0}\frac{q}{r}$
+		\item Be able to use superposition to find the total potential of several point charges
+		\item Be prepared to use this result to determine the electric field and potential energy of the charge distribution (note: since $\Delta U = q\Delta V, U=qV$)
+		\item Example problems: P71, P74
+	\end{itemize}
+\end{itemize}
+\end{document}

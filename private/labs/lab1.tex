@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage[margin=1.5cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage[section]{placeins}
+\pagestyle{fancy}
+
+\begin{document}
+\fancyhead[L]{ \includegraphics[width=2cm]{au_logo.png} }
+\fancyhead[R]{PHYS 2250: General Physics II}
+\fancyfoot[C]{\thepage}
+\vspace*{0cm}
+\begin{center}
+	{\LARGE \textbf{Lab 1}}\\
+	\vspace{.25cm}
+	{\Large Motion}
+	%\vspace{0.25cm}
+	%{\Large Due: Friday, September 4}
+\end{center}
+
+\section*{Overview}
+
+In this lab, the average speed of a cart down an incline will be measured two different ways. One way involves the position-versus-time plot and the other way involves the velocity-versus-time plot.
+
+Even though the cart changes velocity, it is still possible to find the average speed of the
+cart. This can be done theoretically by:
+
+\begin{equation}
+	\mathrm{average\ speed}=\frac{\mathrm{distance}}{\Delta t}
+\end{equation}
+
+The basic procedure is this:
+
+\begin{enumerate}
+	\item Make predictions
+	\begin{enumerate}
+		\item Sketch your prediction of a velocity-versus-time graph and a position-versus-time graph for a cart rolling down an incline
+		\item How do you expect the motion to change if the mass of the cart is increased?
+		\item How do you expect the motion to change if the incline of the track is increased?
+	\end{enumerate}
+	\item Test predictions
+	\begin{enumerate}
+		\item Use the motion sensor to graph the motion of the cart as it rolls down the incline and compare with your predictions.
+		\item Calculate average velocity in two different ways: using the velocity graph and using the position graph
+		\item Vary the mass of the cart and the height of the incline to see how it affects the cart's motion
+	\end{enumerate}
+\end{enumerate}
+
+\section*{Details}
+\subsection*{Measuring Average Velocity}
+You will use the motion detector to measure average velocity in two different ways: from the position vs time graph, and from the velocity vs time graph. These graphs will be available through the Logger Pro software.
+
+To measure the average velocity:
+
+\begin{enumerate}
+	\item Start with the motion sensor on the inclined end of the track, holding the cart at rest just in front of it.
+	\item In Logger Pro, begin data collection, and then release the cart. Make sure you catch the cart or stop it from falling on the ground!
+	\item Stop data collection. You should now see two graphs on your computer: a position vs time graph, and a velocity vs time graph.
+	\item On the velocity vs time graph, using the cursor, click and drag to highlight and select the portion of the graph that you want to analyze (for example, you don't want to include data before the cart started moving, or after it left the track). Your instructor can help you with this.
+	\item With the data still selected, calculate the average velocity by going to \texttt{Analyze->Statistics} in Logger Pro. This will cause a small box to pop up with several numbers, one of which is the mean of the velocity. Record this number. This is your experimental measurement.
+	\item With the data still selected, examine the actual data points in Logger Pro (to the left on the screen.) The data points consist of times and positions. The selected data should be highlighted. Record the first and last values for time and position inside of the highlighted section (your instructor can help you with this). Use these numbers to calculate the average velocity. Record this number. This is your theoretical measurement.
+\end{enumerate}
+
+Repeat the above procedure for several values of track inclination and cart mass (at least three different values for each). Record your results in a table similar to the one above:
+
+\begin{table}
+	\centering
+	\begin{tabular}{|c|c|c|c|}
+		\hline
+		\textbf{Inclination} & \textbf{Cart Mass} & \textbf{Theoretical Average Speed} & \textbf{Experimental Average Speed}\\
+		\hline
+		Angle/Height 1 & Mass 1 & theoretical average 1 & experimental average 1\\
+		\hline 
+		Angle/Height 2 & Mass 1 & theoretical average 2 & experimental average 2\\
+		\hline
+		etc... & etc... & etc... & etc... \\ \hline
+	\end{tabular}
+\end{table}
+
+\begin{itemize}
+	\item Be sure not to vary inclination and cart mass at the same time, then you learn nothing!
+	\item You should test at least three different inclinations, and three different cart masses
+\end{itemize}
+
+\section*{Analysis}
+\begin{enumerate}
+	\item How does the shape of your actual graphs compare to your predictions?
+	\item For each trial, are your experimental and theoretical measurements in agreement? Why or why not?
+	\item How does increasing the incline of the track affect the average velocity?
+	\item How does increasing the cart mass affect average velocity?
+\end{enumerate}
+\end{document}

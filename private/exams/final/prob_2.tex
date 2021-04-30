@@ -1,0 +1,34 @@
+\newcommand{\length}{10 cm}
+\question For this question, choose one of either (a) or (b) to solve. Clearly indicate which problem you are solving. If you solve both, you will not receive extra credit, but I will count the problem for which you received the most points.
+
+\begin{parts}
+\part In the circuit below: $\varepsilon=9$ V, $R_1=120\ \Omega$, $R_2=100\ \Omega$, and $R_3=150\ \Omega$. A voltmeter is connected across $R_1$. If the resistor inside of the voltmeter has a resistance of of 1 k$\Omega$, by what percentage is the voltmeter off from the ``true'' value (the voltage across the resistor when the voltmeter is not connected)?
+\begin{center}
+	\begin{circuitikz} 
+		\draw
+		(0,0) to[battery,l=$\varepsilon$] (0,4)
+		(0,4) to (2,4)
+		(2,4) to[resistor,l=$R_1$](6,4)
+		(6,4) to[resistor,l=$R_2$](6,0)
+		(6,4) to (8,4)
+		(8,4) to [resistor,l=$R_3$](8,0)
+		(8,0) to (0,0)
+		(3,4) to (3,6)
+		(3,6) to [voltmeter](5,6)
+		(5,6) to (5,4)
+		;
+	\end{circuitikz}
+\end{center}
+
+\newpage
+\part You want to wire together a strand of Christmas lights. You have 5 bulbs, each with a resistance of 10 $\Omega$. The power source for your circuit will be a standard 120 V wall outlet (you can treat this as a 120 V battery). Design a circuit which meets the following specifications:
+\begin{itemize}
+	\item Your circuit must contain all 5 bulbs
+	\item The power dissipated over each bulb is at least 0.5 W
+	\item The current through each bulb may not exceed 3 A
+	\item When one bulb burns out, the others stay lit
+\end{itemize}
+You also have at your disposal a variable resistor which can be set to any value between 10-500 $\Omega$.
+
+Sketch your circuit and show that it meets the above specifications.
+\end{parts}
